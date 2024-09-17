@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #01161f;
+    color:#fff;
+}
+nav header h4 span{
+    font-size: 150%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(248, 92, 92);
+}
+nav header h1 span{
+    font-size: 150%;
+    font-family: cursive;
+    color: rgb(248, 4, 16);
+    position: relative;
+    padding-left: 0;
+}
+nav header h6 span{
+    font-size: 150%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(247, 18, 29);
+    position: relative;
+    padding-left: 0;
+}
+#header{
+    width: 100%;
+    height: 100vh; 
+    background-image: url(mypics/background1.webp); 
+    background-size: cover; 
+    background-position: left;
+}
+.container{
+    padding: 10px 10%; 
+}
+nav { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #dcf83e;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f391f7;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+   width:100%; 
+}
+.header-text{ 
+    margin-top: 20%;
+    font-size: 20px;  
+}
+.header-text h2{ 
+   font-size: 40px; 
+   margin-top: 20px;
+} 
+.para h5 span a:after::hover{
+     transition: 0.5s;
+}
+/* *********************************************about me*********************************************/
+#about{
+    padding: 80px 0;
+    color:bisque
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about1{
+    flex-basis: 35%;
+}
+.about1 img{
+   width:100%;
+   border-radius: 50%;
+}
+.about2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 47px;
+    font-family: cursive;
+    color: rgb(94, 208, 212);
+}
+.para nav p h5 span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+}
+.re.resume a::after:hover{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f391f7;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    }
+/* ******************************************education************************************* */
+#Education{
+padding: 80px 0;
+width: 100%;
+height: 100vh;
+background-image:url(mypics/school3.jpg) ;
+background-size: cover;
+}
+.educator h1{
+    margin-top: 100px;
+    padding-left: 43%;
+    float:center;
+}
+.educator h1 header{
+    font-size: 47px;
+    font-family: cursive;
+    color: #86f705;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-titles nav{
+    padding-left: 35%;
+}
+.tab-links{
+    margin-right: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f70e1a;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+  padding-left: 30%; 
+  transition: 0.2s;   
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #fd3741;
+    font-size: 15px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* **********************************skills**************************** */
+#Skills{
+ width: 100%;
+ height: 170vh;
+ background-image:url(mypics/img.jpeg) ;
+ background-size: cover;
+}
+.container1 h1{
+ font-family: cursive;
+ color: #05013a; 
+ font-size: 47px;
+ padding-left: 45%;
+ float:center; 
+ position: relative;
+}
+.skillslist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 20px;
+    
+}
+.skillslist h2{
+    color: #fd3741;
+    font-size: 17px;
+}
+.skillslist ul li span{
+    color: #eb4f5c;
+    font-size: 15px;
+}
+.skillslist div{
+    background: #262626;
+    padding: 40px;
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.3s,transform 0.3s ;
+}
+.skillslist div:hover{
+    background: #e495c0;
+    transform: translateY(-10px);
+}
+/* **********************************contact**************************** */
+.sub-title3{
+    font-family: cursive;
+    font-size: 47px;
+    color: #ddfd27;
+    float: center;
+    position: relative;
+    padding-left: 45%;
+}
+.my-contact-details{
+    flex-basis: 35%;
+}
+.contact-details-form{
+    flex-basis: 60%;
+}
+.my-contact-details p{
+    margin-top: 30px;
+}
+.my-contact-details p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-media{
+    margin-top: 30px;
+}
+.social-media a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-media a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+
+}
+.contact-details-form{
+    width:100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #f70e1a;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright{
+    color: #ff004f;
+}
+/* ******************************css fo small screens**************** */
+nav .fas{
+    display: none;
+}
+@media  only screen and(max-width:600px){
+#header{
+    background-image: url(mypics/background1.webp);
+ }
+ .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+ }
+ .header-text h2{
+    font-size: 30px;
+ }
+ nav .fas{
+    display: block;
+    font-size: 25px;
+ }
+ nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+ }
+ nav ul li{
+     display: block;
+     margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top:25px;
+    left: 25px;
+    cursor: pointer;
+}
+.sub-title{
+    font-size: 40px;
+}
+.about1, .about2{
+   flex-basis: 100px;
+}
+ .about1{
+    margin-bottom: 30px;
+ }
+ .about2{
+    font-size: 14px;
+ }
+ .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+ }
+ .my-contact-details , .contact-details-form{
+    flex-basis: 100%;
+ }
+ .copyright{
+    font-size: 14px;
+ }
+}
